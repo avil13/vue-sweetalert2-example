@@ -1,0 +1,96 @@
+<template>
+  <div id="app" class="container">
+    <h1 class="h1">{{ msg }}</h1>
+    <h3>{{ description }}</h3>
+
+    <br />
+
+    <div class="row">
+      <button
+        @click="simple"
+        class="btn btn-outline-primary col s12 m3"
+        type="button"
+      >
+        simple
+      </button>
+      <button
+        @click="success"
+        class="btn btn-outline-primary col s12 m3"
+        type="button"
+      >
+        success
+      </button>
+      <button
+        @click="error"
+        class="btn btn-outline-primary col s12 m3"
+        type="button"
+      >
+        error
+      </button>
+      <button
+        @click="toastTopEnd"
+        class="btn btn-outline-primary col s12 m3"
+        type="button"
+      >
+        toast top end
+      </button>
+    </div>
+
+    <a href="https://sweetalert2.github.io" class="doc-link" target="_blank"
+      >Sweetalert2 documentation</a
+    >
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "black-alert-component",
+
+  data() {
+    return {
+      msg: "Welcome to Vue-Sweetalert2 example",
+      description: ""
+    };
+  },
+  methods: {
+    simple() {
+      this.$swal("Hello world!");
+    },
+
+    success() {
+      Vue.swal({
+        type: "success",
+        title: "Hello",
+        text: "Hello brave new world!"
+      });
+    },
+
+    error() {
+      this.$swal({
+        type: "error",
+        title: "Oops...",
+        text: "Something went wrong!"
+      });
+    },
+
+    toastTopEnd() {
+      this.$swal({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+
+        type: "success",
+        title: "Hi man",
+        text: "is a good day!"
+      });
+    }
+  }
+});
+</script>
+
+<style lang="scss" scope>
+@import "~@sweetalert2/themes/dark/dark.scss";
+</style>
