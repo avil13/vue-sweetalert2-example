@@ -61,7 +61,7 @@ export default Vue.extend({
 
     success() {
       Vue.swal({
-        type: "success",
+        icon: "success",
         title: "Hello",
         text: "Hello brave new world!"
       });
@@ -69,7 +69,7 @@ export default Vue.extend({
 
     error() {
       this.$swal({
-        type: "error",
+        icon: "error",
         title: "Oops...",
         text: "Something went wrong!"
       });
@@ -82,7 +82,7 @@ export default Vue.extend({
         showConfirmButton: false,
         timer: 3000,
 
-        type: "success",
+        icon: "success",
         title: "Hi man",
         text: "is a good day!"
       });
