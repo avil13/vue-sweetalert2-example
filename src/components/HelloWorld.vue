@@ -58,7 +58,7 @@ export default class AppComponent extends Vue {
     Vue.swal({
       icon: "success",
       title: "Hello",
-      text: "Hello brave new world!"
+      text: "Hello brave new world!",
     });
   }
 
@@ -66,7 +66,7 @@ export default class AppComponent extends Vue {
     this.$swal({
       icon: "error",
       title: "Oops...",
-      text: "Something went wrong!"
+      text: "Something went wrong!",
     });
   }
 
@@ -79,7 +79,7 @@ export default class AppComponent extends Vue {
 
       icon: "success",
       title: "Hi man",
-      text: "is a good day!"
+      text: "is a good day!",
     });
   }
 }

@@ -51,7 +51,7 @@ export default Vue.extend({
   data() {
     return {
       msg: "Welcome to Vue-Sweetalert2 example",
-      description: ""
+      description: "",
     };
   },
   methods: {
@@ -63,7 +63,7 @@ export default Vue.extend({
       Vue.swal({
         icon: "success",
         title: "Hello",
-        text: "Hello brave new world!"
+        text: "Hello brave new world!",
       });
     },
 
@@ -71,7 +71,7 @@ export default Vue.extend({
       this.$swal({
         icon: "error",
         title: "Oops...",
-        text: "Something went wrong!"
+        text: "Something went wrong!",
       });
     },
 
@@ -84,10 +84,10 @@ export default Vue.extend({
 
         icon: "success",
         title: "Hi man",
-        text: "is a good day!"
+        text: "is a good day!",
       });
-    }
-  }
+    },
+  },
 });
 </script>
 
